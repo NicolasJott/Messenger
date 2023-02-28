@@ -19,6 +19,7 @@
 		5F85DB7629AD7F9400A2DD27 /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F85DB7529AD7F9400A2DD27 /* VideoPlayerViewController.swift */; };
 		5F85DB7829AD7FA700A2DD27 /* NewConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F85DB7729AD7FA700A2DD27 /* NewConversationViewController.swift */; };
 		5F85DB7A29AD7FB700A2DD27 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F85DB7929AD7FB700A2DD27 /* ProfileViewController.swift */; };
+		5F85DB7D29AD858100A2DD27 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F85DB7C29AD858100A2DD27 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		5F85DB7529AD7F9400A2DD27 /* VideoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewController.swift; sourceTree = "<group>"; };
 		5F85DB7729AD7FA700A2DD27 /* NewConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewConversationViewController.swift; sourceTree = "<group>"; };
 		5F85DB7929AD7FB700A2DD27 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		5F85DB7C29AD858100A2DD27 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,8 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				5F6FF3B129AD12EE000879FB /* ConversationsViewController.swift */,
-				5F6FF3C729AD1675000879FB /* LoginViewController.swift */,
-				5F6FF3C929AD168C000879FB /* RegisterViewController.swift */,
+				5F85DB7B29AD80F000A2DD27 /* Login */,
 				5F85DB7329AD7F8100A2DD27 /* PhotoViewerViewController.swift */,
 				5F85DB7529AD7F9400A2DD27 /* VideoPlayerViewController.swift */,
 				5F85DB7729AD7FA700A2DD27 /* NewConversationViewController.swift */,
@@ -120,6 +121,7 @@
 			children = (
 				5F6FF3AD29AD12EE000879FB /* AppDelegate.swift */,
 				5F6FF3AF29AD12EE000879FB /* SceneDelegate.swift */,
+				5F85DB7C29AD858100A2DD27 /* Extensions.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -131,6 +133,15 @@
 				5F6FF3B829AD12EF000879FB /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		5F85DB7B29AD80F000A2DD27 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				5F6FF3C729AD1675000879FB /* LoginViewController.swift */,
+				5F6FF3C929AD168C000879FB /* RegisterViewController.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,6 +220,7 @@
 				5F85DB7829AD7FA700A2DD27 /* NewConversationViewController.swift in Sources */,
 				5F6FF3B229AD12EE000879FB /* ConversationsViewController.swift in Sources */,
 				5F85DB7629AD7F9400A2DD27 /* VideoPlayerViewController.swift in Sources */,
+				5F85DB7D29AD858100A2DD27 /* Extensions.swift in Sources */,
 				5F6FF3AE29AD12EE000879FB /* AppDelegate.swift in Sources */,
 				5F85DB7A29AD7FB700A2DD27 /* ProfileViewController.swift in Sources */,
 				5F6FF3B029AD12EE000879FB /* SceneDelegate.swift in Sources */,
@@ -362,9 +374,13 @@
 				DEVELOPMENT_TEAM = ZH8B3J7N69;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Messenger/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Please allow access to take a profile picture";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "please allow access to select a photo for your profile";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -389,9 +405,13 @@
 				DEVELOPMENT_TEAM = ZH8B3J7N69;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Messenger/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Please allow access to take a profile picture";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "please allow access to select a photo for your profile";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
