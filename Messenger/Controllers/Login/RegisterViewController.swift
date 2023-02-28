@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class RegisterViewController: UIViewController {
     
@@ -152,7 +153,7 @@ class RegisterViewController: UIViewController {
         imageView.layer.cornerRadius = imageView.width/2.0
         
         firstNameField.frame = CGRect(x: 30,
-                                  y: imageView.bottom+30,
+                                  y: imageView.bottom+50,
                                   width: scrollView.width-60,
                                   height: 52)
         
@@ -184,13 +185,26 @@ class RegisterViewController: UIViewController {
         emailField.resignFirstResponder()
         passwordField.resignFirstResponder()
         
-        guard let email = emailField.text, let password = passwordField.text, let firstName = firstNameField.text, let lastName = lastNameField.text,
+        guard let email = emailField.text,
+              let password = passwordField.text,
+              let firstName = firstNameField.text,
+              let lastName = lastNameField.text,
                 !email.isEmpty, !password.isEmpty, !firstName.isEmpty, !lastName.isEmpty, password.count >= 6 else {
             alertUserLoginError()
             return
         }
         
         // Firebase Log In
+        
+        FirebaseAuth.Auth.auth().createUser(withEmail: email, password: password, completion: { authResult, error in
+            guard let result = authResult, error == nil else {
+                print("Error creating user")
+                return
+            }
+            
+            let user = result.user
+            print("Created user: \(user)")
+        })
     }
     
     func alertUserLoginError() {
