@@ -773,9 +773,9 @@ static NSMutableDictionary *gKeychainServiceNameForAppName;
 - (void)internalSignInAndRetrieveDataWithEmail:(NSString *)email
                                       password:(NSString *)password
                                     completion:(FIRAuthDataResultCallback)completion {
-  FIREmailPasswordAuthCredential *credential =
+  FIREmailPasswordAuthCredential *credentail =
       [[FIREmailPasswordAuthCredential alloc] initWithEmail:email password:password];
-  [self internalSignInAndRetrieveDataWithCredential:credential
+  [self internalSignInAndRetrieveDataWithCredential:credentail
                                  isReauthentication:NO
                                            callback:completion];
 }
@@ -790,8 +790,6 @@ static NSMutableDictionary *gKeychainServiceNameForAppName;
                                              callback:(FIRAuthDataResultCallback)callback {
   FIRSignInWithGameCenterRequest *request =
       [[FIRSignInWithGameCenterRequest alloc] initWithPlayerID:credential.playerID
-                                                  teamPlayerID:credential.teamPlayerID
-                                                  gamePlayerID:credential.gamePlayerID
                                                   publicKeyURL:credential.publicKeyURL
                                                      signature:credential.signature
                                                           salt:credential.salt

@@ -7,8 +7,22 @@ target 'Messenger' do
 
   # Pods for Messenger
 
+# Firebase
 pod 'Firebase/Core'
 pod 'Firebase/Auth'
 pod 'Firebase/Database'
+
+# Facebook
+pod 'FBSDKLoginKit'
+pod 'FBSDKCoreKit'
+pod 'FacebookSDK'
+pod 'FacebookSDK/LoginKit'
+pod 'FacebookSDK/ShareKit'
+pod 'FacebookSDK/PlacesKit'
+
+pod 'FBSDKMessengerShareKit'
+
+# Google Sign In
+pod 'GoogleSignIn', '~> 5.0'
 
 end

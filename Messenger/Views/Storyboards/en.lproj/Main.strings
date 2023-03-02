@@ -1,0 +1,12 @@
+
+/* Class = "UINavigationItem"; title = "Profile"; ObjectID = "PsU-Er-nHa"; */
+"PsU-Er-nHa.title" = "Profile";
+
+/* Class = "UINavigationItem"; title = "Chats"; ObjectID = "Qmm-Mq-vTs"; */
+"Qmm-Mq-vTs.title" = "Chats";
+
+/* Class = "UITabBarItem"; title = "Profile"; ObjectID = "Rn1-mI-dlG"; */
+"Rn1-mI-dlG.title" = "Profile";
+
+/* Class = "UITabBarItem"; title = "Chats"; ObjectID = "ZmM-1z-mFt"; */
+"ZmM-1z-mFt.title" = "Chats";

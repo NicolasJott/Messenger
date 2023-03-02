@@ -21,6 +21,7 @@
 		5F85DB7A29AD7FB700A2DD27 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F85DB7929AD7FB700A2DD27 /* ProfileViewController.swift */; };
 		5F85DB7D29AD858100A2DD27 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F85DB7C29AD858100A2DD27 /* Extensions.swift */; };
 		5F85DB7F29AE823300A2DD27 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5F85DB7E29AE823300A2DD27 /* GoogleService-Info.plist */; };
+		5F85DB8129AE8E4100A2DD27 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F85DB8029AE8E4100A2DD27 /* DatabaseManager.swift */; };
 		CCF2224563394B8F46EC6EA1 /* Pods_Messenger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF03FF24696E72D77DB68426 /* Pods_Messenger.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +43,7 @@
 		5F85DB7929AD7FB700A2DD27 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		5F85DB7C29AD858100A2DD27 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		5F85DB7E29AE823300A2DD27 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5F85DB8029AE8E4100A2DD27 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		BF03FF24696E72D77DB68426 /* Pods_Messenger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Messenger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFB9638ABD6D7C94936B324D /* Pods-Messenger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Messenger.release.xcconfig"; path = "Target Support Files/Pods-Messenger/Pods-Messenger.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -141,6 +143,7 @@
 				5F6FF3AD29AD12EE000879FB /* AppDelegate.swift */,
 				5F6FF3AF29AD12EE000879FB /* SceneDelegate.swift */,
 				5F85DB7C29AD858100A2DD27 /* Extensions.swift */,
+				5F85DB8029AE8E4100A2DD27 /* DatabaseManager.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 				5F6FF3A729AD12EE000879FB /* Frameworks */,
 				5F6FF3A829AD12EE000879FB /* Resources */,
 				034198DE08EFC2F1B40804FD /* [CP] Embed Pods Frameworks */,
+				5B32D1E3B01F3A1BDF3B9A32 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -258,6 +262,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Messenger/Pods-Messenger-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		5B32D1E3B01F3A1BDF3B9A32 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Messenger/Pods-Messenger-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Messenger/Pods-Messenger-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Messenger/Pods-Messenger-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		72F3F3A3EA60D946E12A6DB7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -288,6 +309,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F6FF3C829AD1675000879FB /* LoginViewController.swift in Sources */,
+				5F85DB8129AE8E4100A2DD27 /* DatabaseManager.swift in Sources */,
 				5F6FF3CA29AD168C000879FB /* RegisterViewController.swift in Sources */,
 				5F85DB7829AD7FA700A2DD27 /* NewConversationViewController.swift in Sources */,
 				5F6FF3B229AD12EE000879FB /* ConversationsViewController.swift in Sources */,
